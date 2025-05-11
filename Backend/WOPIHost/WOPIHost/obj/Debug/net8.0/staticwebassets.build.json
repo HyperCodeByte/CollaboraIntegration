@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "2hbjx4Cy6wdDquJJvoa82EWdpZWPxtI5t3SameSISlE=",
+  "Source": "WOPIHost",
+  "BasePath": "_content/WOPIHost",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

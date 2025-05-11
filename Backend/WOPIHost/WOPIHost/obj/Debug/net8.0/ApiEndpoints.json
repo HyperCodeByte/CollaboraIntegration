@@ -1,0 +1,137 @@
+[
+  {
+    "ContainingType": "FilesController",
+    "Method": "GetFiles",
+    "RelativePath": "files",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WOPIHost.Controllers.DiscoveryController",
+    "Method": "GetDiscoveryFile",
+    "RelativePath": "hosting/discovery",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WOPIHost.Controllers.WopiController",
+    "Method": "CheckFileInfo",
+    "RelativePath": "wopi/files/{fileId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "access_token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WOPIHost.Controllers.WopiController",
+    "Method": "RenameFile",
+    "RelativePath": "wopi/files/{fileId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "access_token",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X_WOPI_Override",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X_WOPI_RequestedName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WOPIHost.Controllers.WopiController",
+    "Method": "GetFileContents",
+    "RelativePath": "wopi/files/{fileId}/contents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "access_token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WOPIHost.Controllers.WopiController",
+    "Method": "PutFileContents",
+    "RelativePath": "wopi/files/{fileId}/contents",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "access_token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WOPIHost.Controllers.WopiController",
+    "Method": "GenerateDocumentUrl",
+    "RelativePath": "wopi/files/generate-url",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "access_token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
