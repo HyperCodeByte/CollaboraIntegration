@@ -1,0 +1,21 @@
+services:
+  collabora:
+    image: collabora/code:latest
+    container_name: collabora
+    restart: unless-stopped
+    environment:
+      - domain=192.168.0.109  # Replace with your domain(s)
+      - extra_params="--o:ssl.enable=false --o:ssl.termination=false --o:storage.wopi.host=192.168.0.109"
+     # - DONT_GEN_SSL_CERT=true  # Disable self-signed certs (use your own)
+      - username=ali          # Basic auth (optional)
+      - password=a2104516A
+      - dictionaries=en_US es_ES fr_FR  # Optional: Preload dictionaries
+    ports:
+      - "9980:9980"
+    volumes:
+      - ./coolwsd:/etc/coolwsd  # Persistent config
+    #  - collabora_data:/etc/coolwsd
+   #   - ./ssl:/etc/coolwsd/cert:ro   # Mount SSL certs
+
+volumes:
+  collabora_data:
